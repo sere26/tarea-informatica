@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de Informática</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        /* Fondo de pantalla llamativo */
+        header {
+            background: url('https://www.technologyreview.com/wp-content/uploads/2020/07/technology-code-keyboard.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            box-sizing: border-box;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            margin: 0;
+            animation: slideIn 2s ease-out;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-out;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Animaciones */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilo del menú de navegación */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            transform: scale(1.1);
+        }
+
+        /* Estilo de las secciones */
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeInSection 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInSection {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h2 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+
+        /* Mensaje de autor */
+        .author-message {
+            margin-top: 40px;
+            font-size: 1.5em;
+            color: #777;
+        }
+
+        .author-message i {
+            color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>Bienvenido al Mundo de la Informática</h1>
+        <p>Explora los principios fundamentales de la programación, el hardware, la ciberseguridad y mucho más. Sumérgete en el fascinante universo de la tecnología y descubre cómo impacta cada aspecto de nuestras vidas.</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#programacion" class="active">Programación</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#informática">Informática</a>
+        <a href="#ciberseguridad">Ciberseguridad</a>
+    </nav>
+
+    <!-- Sección de Programación -->
+    <section id="programacion">
+        <h2>Programación</h2>
+        <p>La programación es el proceso de escribir instrucciones que una computadora puede ejecutar. Existen varios lenguajes de programación como Python, JavaScript, Java, y C++. Cada uno tiene su propio propósito y aplicaciones en diferentes áreas de la informática.</p>
+        <img src="https://concepto.de/wp-content/uploads/2020/08/Programacion-informatica-scaled-e1724960033513.jpg" alt="Imagen sobre programación">
+    </section>
+
+    <!-- Sección de Hardware -->
+    <section id="hardware">
+        <h2>Hardware</h2>
+        <p>El hardware es la parte física de una computadora. Incluye componentes como la CPU, la memoria RAM, los discos duros y las tarjetas gráficas. Conocer el hardware es fundamental para entender el rendimiento y la capacidad de una computadora.</p>
+        <img src="https://www.pcware.com.co/wp-content/uploads/2023/07/mejor-pcgamer-para-ti.webp" alt="Imagen sobre hardware">
+    </section>
+
+    <!-- Sección de Informática -->
+    <section id="informática">
+        <h2>Informática</h2>
+        <p>La informática abarca tanto el hardware como el software, y su impacto en nuestra vida cotidiana es enorme. Desde la creación de algoritmos hasta el desarrollo de sistemas operativos, la informática está en el núcleo de la tecnología moderna.</p>
+        <img src="https://muyeducativo.com/wp-content/uploads/2018/01/cpu-images-min_opt.jpg" alt="Imagen sobre informática">
+    </section>
+
+    <!-- Sección de Ciberseguridad -->
+    <section id="ciberseguridad">
+        <h2>Ciberseguridad</h2>
+        <p>La ciberseguridad es la práctica de proteger sistemas, redes y datos de posibles amenazas cibernéticas. Es fundamental en un mundo cada vez más digitalizado, donde la protección de la información es crucial para mantener la privacidad y la integridad de los sistemas.</p>
+        <img src="https://smilecomunicacion.com/wp-contenido/uploads/2024/06/ciberseguridad-en-la-empresa.jpg.webp" alt="Imagen sobre ciberseguridad">
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Página Web de Informática. Todos los derechos reservados.</p>
+        <div class="author-message">
+            <p>Esta página fue realizada por <i>Sergio Gutierrez</i> como parte de una tarea de <strong>Informática</strong>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
